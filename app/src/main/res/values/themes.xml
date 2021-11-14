@@ -2,12 +2,12 @@
     <!-- Base application theme. -->
     <style name="Theme.Homework" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/pink</item>
+        <item name="colorPrimaryVariant">@color/pink</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorSecondary">@color/teal</item>
+        <item name="colorSecondaryVariant">@color/teal</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
@@ -22,4 +22,74 @@
     <style name="Theme.Homework.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Homework.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+
+
+    <style name="Theme.Homework.Switch" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        ...
+        <item name="switchStyle">@style/Widget.App.Switch</item>
+    </style>
+
+    <style name="Widget.App.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Switch</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Switch" parent="Theme.Homework.Switch">
+        <item name="colorOnSurface">@color/pink</item>
+        <item name="colorSecondary">@color/pink</item>
+    </style>
+
+    <style name="Theme.Homework.FloatingActionButtonStyle" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        ...
+        <item name="extendedFloatingActionButtonStyle">@style/Widget.App.ExtendedFloatingActionButton</item>
+        <item name="floatingActionButtonStyle">@style/Widget.App.FloatingActionButton</item>
+    </style>
+
+    <style name="Widget.App.ExtendedFloatingActionButton" parent="Widget.MaterialComponents.ExtendedFloatingActionButton.Icon">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.FloatingActionButton</item>
+        <item name="shapeAppearanceOverlay">
+            @style/ShapeAppearance.App.SmallComponent
+        </item>
+    </style>
+
+    <style name="Widget.App.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.FloatingActionButton</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.App.SmallComponent
+        </item>
+    </style>
+    <style name="ThemeOverlay.App.FloatingActionButton" parent="Widget.App.FloatingActionButton">
+        <item name="colorSecondary">@color/pink</item>
+        <item name="colorOnSecondary">@color/pink</item>
+        <item name="colorOnSurface">@color/pink</item>
+    </style>
+    <style name="Theme.Homework.FloatingActionButton." parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        ...
+        <item name="colorSecondary">@color/pink</item>
+        <item name="colorOnSecondary">@color/pink</item>
+        <item name="colorOnSurface">@color/pink</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+    <style name="Theme.Homework.Toolbar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    ...
+    <item name="colorPrimary">@color/pink</item>
+    <item name="colorPrimaryVariant">@color/pink</item>
+    <item name="colorOnPrimary">@color/pink</item>
+    <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <style name="Theme.Homework.Button.Style" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+      <item name="materialButtonStyle">@drawable/bott
+      </item>
+
+    </style>
+
 </resources>
+
